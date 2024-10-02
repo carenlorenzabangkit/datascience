@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
+from PIL import Image
 
 # Load the cleaned dataset from the same directory
 cleaned_file_path = 'cleaned_customers_data.csv'
