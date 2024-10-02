@@ -1,27 +1,45 @@
-# Customer Data Analysis Dashboard
+# Customer Data Analysis Dashboard ✨
 
-This is a Streamlit dashboard for analyzing customer data by state. The dashboard visualizes the number of customers in each state using bar and pie charts.
+This is a **Streamlit** dashboard for analyzing customer data across different states. It provides visualizations such as bar charts and pie charts to help you explore customer distribution in various regions.
+
+## Features
+- Bar chart: Number of customers by state.
+- Pie chart: Distribution of customers by state.
+- Metrics to identify the states with the least number of customers.
 
 ## Prerequisites
 
-Before you begin, ensure you have the following installed:
+Before running the project, ensure you have the following:
+- Python 3.7 or higher.
+- Pip (Python package manager).
+- Required Python libraries (specified in `requirements.txt`).
 
-- Python 3.7 or higher
-- Pip (Python package manager)
+## Setup Environment - Conda 
 
-## Setup Instructions
+1. **Create a new virtual environment**:
+   ```bash
+   conda create --name customer-data-analysis python=3.9
+2. Activate the environment:
+   ```bash
+   conda activate customer-data-analysis
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
 
-### 1. Clone or Download the Repository
-
-If this project is in a repository, you can clone it. Otherwise, ensure that the following files are in the same directory:
-
-- `dashboard.py` (the dashboard script)
-- `cleaned_customers_data.csv` (your cleaned dataset)
-- `requirements.txt` (list of dependencies)
-
-### 2. Install Required Libraries
-
-To install the necessary Python libraries, open a terminal in the project directory and run:
-
-```bash
+## Setup Environment - Shell/Terminal
+   ```bash
+mkdir customer_data_dashboard
+cd customer_data_dashboard
+pipenv install
+pipenv shell
 pip install -r requirements.txt
+
+```
+## Run the Streamlit App
+  ```bash
+streamlit run dashboard.py
+
+
+
+
+
