@@ -25,8 +25,7 @@ least_customers_state = state_counts.idxmin()
 least_customers_count = state_counts.min()
 st.write(f"The state with the least customers is {least_customers_state} with {least_customers_count} customers.")
 
-# 2. Jumlah pelanggan di setiap state
-# Visualisasi: Pie Chart untuk distribusi pelanggan
+# 2. Visualisasi: Pie Chart untuk distribusi pelanggan
 st.subheader('Customer Distribution by State')
 fig, ax = plt.subplots(figsize=(10, 10))
 ax.pie(state_counts, labels=state_counts.index, autopct='%1.1f%%', startangle=140)
